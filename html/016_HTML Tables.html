@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Tables</title>
+</head>
+<!-- 
+The <td> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc. -->
+<style>
+	table, th, td {border: 1px solid black; border-collapse: collapse;}
+	th, td {padding: 15px}
+	th {text-align: left;}
+	table {border-spacing: 5px}
+	th.th2 {text-align: center;}
+	table#tb3 {border: 2px solid black; background-color: #f1f1c1;}
+
+	table#tb3 tr:nth-child(even) {background-color: #eee;}
+	table#tb3 tr:nth-child(odd) {background-color: #fff;}
+	table#tb3 th {background-color: black; color: white;}
+	table#tb3 th {border: 1px solid black;}
+	table#tb3 td {border: 1px solid black;}
+</style>
+
+<body>
+	<table style="width:100%">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Age</th>
+	</tr>
+
+	<tr>
+		<td>Jill</td>
+		<td>Smith</td>
+		<td>50</td>
+	</tr>
+
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>90</td>
+	</tr>
+	</table>
+
+	<br>
+
+	<table>
+		<tr>
+			<th class="th2">Name</th>
+			<th colspan="3" class="th2">Telephone</th>
+		</tr>
+
+		<tr>
+			<td>Bill gates</td>
+			<td>555 555</td>
+			<td>666 777</td>
+			<td>666 777</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<table id="tb3">
+	<caption>User Information</caption>
+		<tr>
+			<th>Name:</th>
+			<td>Bill gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telephone:</th>
+			<td>123 456</td>
+		</tr>
+		<tr>
+			<td>654 321</td>
+		</tr>
+
+	</table>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+Styling HTML with CSS
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+CSS can be added to HTML elements in 3 ways
+	- Inline - by using the style attribute in HTML elements
+	- Internal - by using a <style> element in the <head> section
+	- External - by using an external CSS file
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Styles - CSS</title>
+	<link rel="stylesheet" href="013_css/013_styles.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<!-- External CSS
+An external style sheet is used to define the style for many HTML pages
+With an external style sheet, you can change the look of an entire web site, by changing one file!
+ -->
+
+
+</head>
+<!--
+Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+-->
+<style>
+	
+	h2 {
+		color: red;
+		font-family:verdana;
+		font-size: 300%;
+	}
+	#p01 {
+		color: green;
+		font-family: courier;
+    	font-size: 160%;
+    	border: 1px solid green;
+    	padding: 30px;
+    	margin: 100px;
+	}
+
+	#p02 {
+		color: red;
+		font-family: courier;
+    	font-size: 160%;
+    	border: 1px solid yellow;
+    	padding: 30px;
+    	margin: 50px;
+	}
+
+	p.tm{
+		color: brown;
+		font-size: 160%;
+	}
+</style>
+
+<body>
+<!-- 
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+An inline CSS uses the style attribute of an HTML element.
+ -->
+	<h1 style="color: blue">This is blue heading</h1>
+	<h2>This is red heading</h2>
+	<p id="p01">Paragraph 1</p>
+	<p id="p02">Paragraph 2</p>
+	<p class="tm">Paragraph 3</p>
+	<p class="tm">Paragraph 4</p>
+</body>
+</html>
